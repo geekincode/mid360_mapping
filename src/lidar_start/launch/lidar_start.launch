@@ -1,0 +1,11 @@
+<launch>
+
+  <!-- 启动 达妙IMU -->
+  <include file="$(find dm_imu)/launch/run_without_rviz.launch">
+  </include>
+
+  <!-- 启动 mid360雷达驱动 -->
+  <include file="$(find livox_ros_driver2)/launch_ROS1/msg_MID360.launch">
+  </include>
+
+</launch>
